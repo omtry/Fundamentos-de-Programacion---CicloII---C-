@@ -18,16 +18,16 @@ public:
     std::string titulo; // Define que la variable titulo va a ser una variable de tipo string
     std::string autor; // Define que la variable autor va a ser una variable de tipo string
     int anioPublicacion; // Define que la variable Año de Publicacion va a ser una variable de tipo entero
-    bool EstaDisponible; // Define que la variable Esta siponible va a ser una variable de tipo booleano
+    bool estaDisponible; // Define que la variable Esta siponible va a ser una variable de tipo booleano
     Libro(std::string t="", std::string a="", int anio=0) // Esta linea crea una estructura mas sencilla para agregar los libros, y en caso no se ingrese un dato, se tiene un valor predeterminado (Asesoria de Chat GPT)
-    : titulo(t), autor(a), anioPublicacion(anio), EstaDisponible(true) {} // Estableces que para cada argumento de la clase libro se usen esos valores predeterminados en caso el usuario no lo ingrese
+    : titulo(t), autor(a), anioPublicacion(anio), estaDisponible(true) {} // Estableces que para cada argumento de la clase libro se usen esos valores predeterminados en caso el usuario no lo ingrese
 
     void mostrarDetalles() {
         std::cout <<""<< std::endl;
         std::cout <<"Titulo: "<< titulo << std::endl; // Estableces que se muestre el titulo del libro
         std::cout <<"Autor: "<< autor << std::endl; // Estableces que se nuestre el autor del libro
         std::cout <<"Año de Publicación: "<< anioPublicacion << std::endl; // Estableces que se muestre el año de publicacion
-        std::cout <<"El Libro está Disponible: " << (EstaDisponible ? "Sí" : "No") << std::endl; // Dependiendo sea True or False en terminal se muestra Si o No
+        std::cout <<"El Libro está Disponible: " << (estaDisponible ? "Sí" : "No") << std::endl; // Dependiendo sea True or False en terminal se muestra Si o No
         std::cout <<""<<std::endl;
         std::cout <<"-----------------------------------"<< std::endl; 
     };
@@ -43,7 +43,7 @@ public:
     void agregarLibro(const Libro& nuevoLibro) {
 
          if (buscarLibro(nuevoLibro.titulo)) { // Implementamos una funcion que recorre el vector libros en busca de si ya existe ese titulo, si existe devuelve un puntero y si no un nullptr
-        std::cout << "--- El libro '" << nuevoLibro.titulo << "' ya existe en la biblioteca ---\n";
+        std::cout << "--- El libro '" << nuevoLibro.titulo << "' ya existe en la biblioteca, ingresa otro libro---\n";
         return;
     }
 
@@ -73,10 +73,10 @@ void prestarLibro(const std::string& tituloPrestamo) {
         Libro* libro = buscarLibro(tituloPrestamo); // Primero busca el titulo del libro dentro de la coleccion (Me apoye de Copilot para darle estructura)
         if (libro == nullptr) {
             std::cout << "--- El libro '" << tituloPrestamo << "' no existe en la coleccion de libros ---\n"; // Si no encuentra el libro devuelve que el libro no existe
-        } else if (!libro->EstaDisponible) {
+        } else if (!libro->estaDisponible) {
             std::cout << "--- El libro '" << tituloPrestamo << "' ya está prestado ---\n"; // La segunda condicion es que si el libro existe pero no esta disponible, muestre un mensaje
         } else {
-            libro->EstaDisponible = false; // Como se presto el libro se cambia su estado a no estar disponible
+            libro->estaDisponible = false; // Como se presto el libro se cambia su estado a no estar disponible
             std::cout << "--- Has prestado el libro '" << tituloPrestamo << "' ---\n"; // Si pasa las dos condiciones anteriores se permite que se haga el prestamo
         }
     }
@@ -85,10 +85,10 @@ void prestarLibro(const std::string& tituloPrestamo) {
         Libro* libro = buscarLibro(tituloDevolucion); // Again el programa al devolver busca si el titulo ingresado existe (Me apoye de Copilot para darle estructura)
         if (libro == nullptr) {
             std::cout << "--- El libro '" << tituloDevolucion << "' no existe en la biblioteca ---\n"; // Si no existe el libro devuelve el mensaje correspondiente
-        } else if (libro->EstaDisponible) {
+        } else if (libro->estaDisponible) {
             std::cout << "--- El libro '" << tituloDevolucion << "' ya estaba disponible ---\n"; // Por el contrario de cuando se presta lo que se verifica es si ya se cambio el estado del libro a disponible
         } else {
-            libro->EstaDisponible = true;
+            libro->estaDisponible = true;
           std::cout << "--- Has devuelto el libro '" << tituloDevolucion << "' ---\n"; // Si se pasaron las dos condiciones se devuelve el estado del libro que se qeire devolver a disponible
         }
     }
