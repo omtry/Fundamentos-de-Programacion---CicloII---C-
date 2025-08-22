@@ -48,9 +48,7 @@ public:
     }
 
         libros.push_back(nuevoLibro); // En esta linea se programa que se incluya un nuevo libro al final del vector Libro (Asesoria de Chat GPT)
-        std::cout <<""<< std::endl;
-        std::cout <<"--- Sos increible, agregaste un libro !! ---";
-    }
+} 
 
     void mostrarInventario() {
     std::cout << "\n-----Inventario de la Biblioteca-------\n";
