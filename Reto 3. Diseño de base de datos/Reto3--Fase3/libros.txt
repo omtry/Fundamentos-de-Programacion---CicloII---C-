@@ -1,0 +1,10 @@
+1,Cien anios de soledad,978-1234567890,1967,1,1
+2,La casa de los espiritus,978-9876543210,1982,2,2
+3,El senor de los anillos,978-1111111111,1954,3,3
+4,Don Quijote de la Mancha,978-2222222222,1605,4,4
+5,Orgullo y prejuicio,978-3333333333,1813,5,5
+6,Crimen y castigo,978-4444444444,1866,6,6
+7,Matar a un ruiseñor,978-5555555555,1960,7,7
+8,El principito,978-6666666666,1943,8,8
+9,Fahrenheit 451,978-7777777777,1953,9,9
+10,Toreto se mato,1234567890,785,3,3

@@ -1,0 +1,14 @@
+1,Juan Perez,5to Bachillerato
+2,Maria Lopez,4to Bachillerato
+3,Gerado Andre Calderon,2do Bachillerato
+4,Ana Martinez,3ro Bachillerato
+5,Luis Torres,1ro Bachillerato
+6,Carla Hernandez,5to Bachillerato
+7,Pedro Ramirez,2do Bachillerato
+8,Sofia Gonzalez,4to Bachillerato
+9,Andres Mejia,3ro Bachillerato
+10,Valeria Castillo,1ro Bachillerato
+11,Javier Morales,5to Bachillerato
+12,Daniela Cruz,2do Bachillerato
+13,Fernando Lopez,4to Bachillerato
+14,Donald Figueroa,3 grado

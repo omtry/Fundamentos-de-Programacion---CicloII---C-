@@ -1,0 +1,10 @@
+1,Gabriel Garcia Marquez,Colombiano
+2,Isabel Allende,Chilena
+3,JRR Tolkien,Britanico
+4,Miguel de Cervantes,Espanol
+5,Jane Austen,Britanica
+6,Fyodor Dostoyevski,Ruso
+7,Harper Lee,Estadounidense
+8,Antoine de Saint Exupery,Frances
+9,George Orwell,Britanico
+10,Julio Cortazar,Argentino

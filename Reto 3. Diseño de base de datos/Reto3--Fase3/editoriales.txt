@@ -1,0 +1,11 @@
+1,Editorial Planeta
+2,Editorial Alfaguara
+3,Editorial Anagrama
+4,Editorial Norma
+5,Editorial Santillana
+6,Editorial Siglo XXI
+7,Editorial Fondo de Cultura Economica
+8,Editorial McGraw Hill
+9,Editorial Pearson
+10,Editorial Oxford
+11,2
